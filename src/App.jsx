@@ -81,8 +81,11 @@ function App() {
   }
 
   const eliminarGasto = id => {
-    const gastosActualizados = gastos.filter(gasto => gasto.id !== id) 
-    setGastos(gastosActualizados)
+    const alerta = confirm('¿Deseas eliminar este gasto?')
+    if(alerta){
+      const gastosActualizados = gastos.filter(gasto => gasto.id !== id) 
+      setGastos(gastosActualizados)
+    }
   }
 
   return (

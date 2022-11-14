@@ -332,7 +332,34 @@ main {
 .nuevo-gasto img:hover {
     cursor: pointer;
 }
-
+.contenedor-botones {
+    display: flex;
+    justify-content: space-between;
+}
+.btn-editar {
+    background-color: #3b82f6;
+    color: #f5f5f5;
+    border-radius: 10%;
+    margin-right: 15px;
+    border: none ;
+    padding: 5px 15px;
+}
+.btn-editar:hover {
+    cursor: pointer;
+    background-color: #295caf;
+}
+.btn-eliminar {
+    background-color: #DC2626;
+    color: #f5f5f5;
+    border-radius: 10%;
+    margin-right: 15px;
+    border: none ;
+    padding: 5px 15px;
+}
+.btn-eliminar:hover {
+    cursor: pointer;
+    background-color: #b12323;
+}
 .modal {
     position: absolute;
     background-color: rgb(0 0 0 / 0.92);
@@ -384,23 +411,3 @@ body .modal {
     font-size: 1rem !important;
 }
 
-/*** SWIPE LIST OVERRIDES **/
-.swipe-action__leading {
-    background-color: var(--azul);
-    color: var(--blanco);
-    margin-bottom: 2rem;
-}
-
-.swipe-action__trailing {
-    background-color: #db2777;
-    margin-bottom: 2rem;
-    color: var(--blanco);
-}
-
-.swipeable-list .swipe-action {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.4rem;
-    text-align: right;
-}
